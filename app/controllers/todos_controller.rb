@@ -5,6 +5,7 @@ class TodosController < ApplicationController
   def index
     # TODO, hint: use `params[:scope]` value to filter the todos
     @todos = Todo.order(:created_at)
+    #if params[:scope].in?...
   end
 
   # GET /todos/1.json
