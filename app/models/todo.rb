@@ -11,6 +11,13 @@ class Todo < ApplicationRecord
   end
 
   def update_or_destroy(attributes)
-    # TODO
+    assign_attributes(attributes)
+    if title.blank?
+      destroy
+    else
+      save
+    end
+    #Ou opérateur ternaire
+    #title? ? save : destroy
   end
 end
