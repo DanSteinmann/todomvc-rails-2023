@@ -19,5 +19,6 @@ class Todo < ApplicationRecord
     end
     #Ou opérateur ternaire
     #title? ? save : destroy
+    #test git
   end
 end
